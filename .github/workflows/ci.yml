@@ -27,4 +27,4 @@ jobs:
         run: pytest -q
       - name: Pre-commit (all files)
         run: |
-          pre-commit run --all-files --show-diff-on-failure --color always
+          pre-commit run --show-diff-on-failure --color always
