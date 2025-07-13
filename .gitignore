@@ -1,0 +1,55 @@
+# ---- Python build / runtime artifacts ----
+__pycache__/
+*.py[cod]
+*.pyd
+*.so
+*.dll
+*.egg-info/
+dist/
+build/
+*.log
+
+# ---- Virtual environments ----
+.venv/
+venv/
+.env/
+
+# ---- IDE / Editor configs ----
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# ---- Testing & Coverage ----
+.pytest_cache/
+.mypy_cache/
+.coverage
+htmlcov/
+coverage.xml
+.tox/
+.nox/
+
+# ---- Lint / Formatter caches ----
+.ruff_cache/
+.dmypy.json
+
+# ---- Data & Outputs ----
+data/
+datasets/
+*.csv
+*.tsv
+*.parquet
+*.h5
+*.npz
+
+# ---- OS metadata ----
+.DS_Store
+Thumbs.db
+ehthumbs.db
+
+# ---- Jupyter Notebooks ----
+.ipynb_checkpoints/
+
+# ---- Misc ----
+*.bak
+*.tmp

@@ -1,0 +1,40 @@
+[project]
+name            = "ai_from_scratch"
+version         = "0.1.0"
+description     = "以 NumPy 從零實作機器／深度學習演算法"
+requires-python = ">=3.12"
+authors         = [
+  { name = "d-ben-b", email = "bend06b@gmail.com" }
+]
+license = { text = "MIT" }
+readme  = "README.md"
+
+dependencies = [
+  "numpy>=2.0"                    # 3.12 需 2.x 系列
+]
+
+[project.optional-dependencies]
+dev = [
+  "pytest>=8.0",
+  "black>=24.4",
+  "ruff>=0.4",
+  "mypy>=1.10",
+  "isort>=5.14",
+  "pre-commit>=3.7"
+]
+
+[tool.black]
+line-length = 88
+target-version = ["py312"]
+
+[tool.ruff]
+line-length    = 88
+target-version = "py312"
+
+[tool.mypy]
+python_version = 3.12
+strict         = true
+
+[build-system]
+requires      = ["setuptools>=69", "wheel"]
+build-backend = "setuptools.build_meta"

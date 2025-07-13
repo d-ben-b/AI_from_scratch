@@ -1,0 +1,2 @@
+# ---- Runtime dependencies ----
+numpy>=2.0          # Python 3.12 相容；若未來升級，請同步調整最低版本
