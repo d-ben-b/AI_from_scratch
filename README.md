@@ -1,6 +1,3 @@
-以下為建議的 **`README.md`** 內容，可直接複製至專案根目錄使用。
-
-````markdown
 # AI-from-Scratch 🚀
 
 > 以 **NumPy** 從零實作經典機器學習與深度學習模型  
@@ -51,13 +48,12 @@ pip install -e .[dev]
 # 5. 執行最小驗證
 python -m src.examples.mnist_mlp
 ```
-````
 
 ---
 
 ## 目錄結構
 
-```
+```markdown
 ai-from-scratch/
 ├── src/               ← 主要程式碼包
 │   ├── linalg/        ← 線性代數封裝
@@ -92,7 +88,7 @@ ai-from-scratch/
 
 ---
 
-## 測試與品質保證
+## 測試與品質保證(規劃中)
 
 ```bash
 # 只跑單元測試
@@ -107,7 +103,7 @@ mypy src
 
 ---
 
-## 貢獻指南
+## 貢獻指南(規劃中)
 
 1. Fork → 新建 feature branch → 提交 PR
 2. 請遵守 `CONTRIBUTING.md`：
@@ -129,11 +125,7 @@ mypy src
 
 ---
 
-```
-
 ### 使用說明
+
 - 將上述內容存為 `README.md`，並依自身 GitHub 使用者名稱與實際目錄調整連結（如徽章 URL、repo 路徑）。
 - 若後續新增更多執行期依賴，請同步更新 `requirements.txt` 與文件說明。
-
-如需進一步客製化章節（例如新增 FAQ、Benchmark 數據、教學影片），可在 Issues 中討論後再擴充。
-```
