@@ -1,0 +1,27 @@
+name: CI
+
+on:
+  push:
+    branches: [main] # 你若用 master / trunk，請自行替換
+  pull_request:
+    branches: [main]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4 # 取代 @v2，記得鎖定 major 版
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: "pip" # 自動快取 site-packages
+      - name: Install dependencies
+        run: |
+          pip install -U pip build
+          pip install -e .[dev]
+      - name: Lint (ruff)
+        run: ruff check .
+      - name: Type check (mypy)
+        run: mypy src
+      - name: Unit tests (pytest)
+        run: pytest -q
